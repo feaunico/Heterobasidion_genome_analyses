@@ -1,1 +1,5 @@
 
+Python script for evaluation of fragmentation of de novo assembly
+
+Input: de novo assembly in fasta format
+Usage: python2.7 AssemblyFragmentation.py
