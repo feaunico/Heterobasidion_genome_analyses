@@ -1,0 +1,54 @@
+
+
+
+#### Input
+[General]
+input_fofn=input.fofn
+input_type=raw
+
+target=assembly
+skip_checks=False
+LA4Falcon_preload=false
+
+length_cutoff = 500
+
+length_cutoff_pr = 1000
+
+
+[General]
+pwatcher_type = blocking
+pa_HPCdaligner_option=-v -B128 -t16 -M24
+pa_daligner_option=-e0.75  -l3200 -k18 -h480  -w8 -s100
+
+ovlp_daligner_option=-e.96 -l2500 -k24 -h1024 -w6 -s100
+ovlp_HPCdaligner_option=-v -B128 -M24
+
+
+falcon_sense_option = --output_multi --min_idt 0.70 --min_cov 4 --max_n_read 200 --n_core 8
+
+overlap_filtering_setting = --max_diff 120 --max_cov 120 --min_cov 2 --n_core 12
+
+
+
+[job.defaults]
+job_type = local
+
+#use_tmpdir = /scratch
+pwatcher_type = blocking
+job_type = string
+submit = bash -C ${CMD} >| ${STDOUT_FILE} 2>| ${STDERR_FILE}
+
+NPROC=4
+MB=500
+njobs=1
+[job.step.da]
+[job.step.pda]
+[job.step.la]
+NPROC=4
+[job.step.pla]
+NPROC=1
+[job.step.cns]
+#njobs=1
+NPROC=4
+[job.step.asm]
+NPROC=4
