@@ -1,0 +1,32 @@
+	FALCON4-unzip
+Number of scaffolds	305
+Total size of scaffolds	45160578
+Useful amount of scaffold sequences (>= 25K nt)	43911937
+% of estimated genome that is useful	97.2351084612
+Longest scaffold	1731752
+Shortest scaffold	8004
+Number of scaffolds > 1K nt	305
+Percentage of scaffolds > 1K nt	100.0
+Number of scaffolds > 10K nt	304
+Percentage of scaffolds > 10K nt	99.6721311475
+Number of scaffolds > 100K nt	92
+Percentage of scaffolds > 100K nt	30.1639344262
+Number of scaffolds > 1M nt	8
+Percentage of scaffolds > 1M nt	2.62295081967
+Mean scaffold size	148067.46885245902
+Median scaffold size	41809.0
+N50 scaffold length	408924
+NG50 scaffold length	466960
+scaffold %A	0.235985265733
+scaffold %C	0.263715778837
+scaffold %G	0.264330584963
+scaffold %T	0.235968370467
+scaffold %N	0.0
+	
+Complete BUSCOs	645
+Complete and single-copy BUSCOs (S)	602
+Complete and duplicated BUSCOs (D)	43
+Fragmented BUSCOs (F)  	41
+Missing BUSCOs (M)	72
+ Total BUSCO groups searched	758
+% found	85.09
