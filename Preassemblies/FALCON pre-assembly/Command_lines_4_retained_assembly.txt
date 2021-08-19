@@ -1,0 +1,11 @@
+TUTORIAL CAN BE FOUND AT https://github.com/PacificBiosciences/pb-assembly
+
+# assemble
+fc_run fc_run.cfg.FALCON4
+
+#unzip
+fc_unzip.py fc_unzip.cfg
+
+#Configuration files for final assembly: 
+fc_run.cfg.FALCON4
+fc_unzip.cfg
